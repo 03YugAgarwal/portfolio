@@ -1,0 +1,33 @@
+.blurOverlay1 {
+  position: absolute;
+  left: 800px;
+  top: -500px;
+
+  pointer-events: none;
+
+  width: 649px;
+  height: 626px;
+  flex-shrink: 0;
+
+  border-radius: 649px;
+  background: var(--primary, #ff6f3c);
+  filter: blur(155.5px);
+
+  z-index: -1;
+}
+
+.blurOverlay2 {
+    position: absolute;
+    left: -500px;
+    top: 400px;
+  
+    pointer-events: none;
+  
+    width: 649px;
+    height: 626px;
+    flex-shrink: 0;
+  
+    border-radius: 649px;
+    background: var(--primary, #ff6f3c);
+    filter: blur(155.5px);
+  }

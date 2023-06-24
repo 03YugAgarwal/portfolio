@@ -1,0 +1,60 @@
+.container {
+  display: flex;
+  flex-direction: row;
+
+  justify-content: center;
+  align-items: center;
+
+  border-bottom: 0.0625rem solid #2C282680;
+}
+
+.title {
+  font-size: 1.2rem;
+  font-family: "Poppins";
+  font-weight: 700;
+  margin: 1rem 2rem;
+
+  cursor: pointer;
+  
+  background: linear-gradient(to right, #ffdc30, #ff6f3c);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+
+}
+
+.links a {
+    text-decoration: none;
+    color: var(--black, #2c2826);
+    
+    font-size: 1rem;
+    font-family: 'Poppins';
+    font-weight: 700;
+    margin: 1rem 2rem 1rem 0rem;
+}
+.links{
+    margin-left: auto
+}
+
+.span{
+    width: 0.01rem;
+    height: 2rem;
+    background-color: black;
+}
+
+.icons {
+    /* width: 2rem;
+    height: 2rem; */
+    /* margin-right: 4rem; */
+    margin-left: 2rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.IconItem{
+    margin-right: 2rem;
+}
+
+.IconItem:hover{
+    cursor: pointer;
+}
+
