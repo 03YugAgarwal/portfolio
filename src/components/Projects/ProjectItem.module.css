@@ -1,10 +1,9 @@
 .container {
   display: flex;
-  direction: row;
+  flex-direction: row;
   align-items: center;
 
   margin-top: 80px;
-
 }
 
 .img {
@@ -14,12 +13,12 @@
   width: 50%;
 }
 
-.left{
-    margin-left: 125px;
+.left {
+  margin-left: 125px;
 }
 
-.left .description{
-    margin-right: 125px;
+.left .description {
+  margin-right: 125px;
 }
 
 .imgItem {
@@ -38,17 +37,15 @@
   color: var(--black-75, rgba(44, 40, 38, 0.75));
   /* h4 */
   font-size: 32px;
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-weight: 700;
 }
 
-.description{
-    margin-right: 125px;
-    margin-bottom: 20px;
-    margin-top: 10px;
+.description {
+  margin-right: 125px;
+  margin-bottom: 20px;
+  margin-top: 10px;
 }
-
-
 
 .primary {
   color: black;
@@ -66,12 +63,11 @@
   border-width: 2px;
   background: white;
 
-  margin-right: 24px
+  margin-right: 24px;
 
   /* border: none; */
 }
 
-.primary:hover{
-    background: #ffdc30;
+.primary:hover {
+  background: #ffdc30;
 }
-
