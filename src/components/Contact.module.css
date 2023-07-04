@@ -31,12 +31,17 @@ input{
     height: 30px;
     padding-left: 8px;
     border-radius: 8px;
-    font-style: 'Poppin';
+    font-family: 'Poppins';
 }
 
 .msg{
+    font-family: 'Poppins';
+    padding: 8px;
+    border-radius: 8px;
+    border: none;
     height: 100px;
     width: 500px;
+    margin-bottom: 20px;
 }
 
 .btn {

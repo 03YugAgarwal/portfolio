@@ -81,7 +81,7 @@ const Contact = () => {
         <label htmlFor="message" className={styles.label}>
           Message
         </label>
-        <input type="text" onChange={handleMsgChange} value={details.message}  className={styles.msg} />
+        <textarea type="text" onChange={handleMsgChange} value={details.message}  className={styles.msg} />
          
         <button onClick={handleClick} className={styles.btn}>
           Send
