@@ -27,7 +27,7 @@ const Navbar = () => {
         >
           <a href="https://www.instagram.com/yugagarwal03/" target="__blank"><AiFillInstagram className={styles.IconItem} /></a>
           <a href="https://github.com/03YugAgarwal" target="__blank"><AiOutlineGithub className={styles.IconItem} /></a>
-          <a href="https://www.linkedin.com/in/yug-agarwal-209939216/" target="__blank"><AiOutlineLinkedin className={styles.IconItem} /></a>
+          <a href="https://www.linkedin.com/in/yugagarwal03/" target="__blank"><AiOutlineLinkedin className={styles.IconItem} /></a>
         </IconContext.Provider>
         {/* <span className={styles.blurOverlay} ></span> */}
       </div>
