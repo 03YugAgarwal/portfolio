@@ -8,7 +8,7 @@
   /* background-color: yellow; */
 }
 
-.text{
+.text {
   display: flex;
   flex-direction: column;
   margin: 0px auto;
@@ -52,4 +52,34 @@
   /* margin-left: 25rem; */
   /* background-color: blue; */
   /* width: 50%; */
+}
+
+@media screen and (max-width: 800px) and (min-width: 600px) {
+  .header1 {
+    font-size: 56px;
+  }
+  .header3 {
+    font-size: 36px;
+  }
+  .header4 {
+    font-size: 18px;
+  }
+  .header {
+    height: 420px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .header1 {
+    font-size: 36px;
+  }
+  .header3 {
+    font-size: 18px;
+  }
+  .header4 {
+    font-size: 12px;
+  }
+  .header {
+    height: 300px;
+  }
 }

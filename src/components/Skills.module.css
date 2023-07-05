@@ -15,7 +15,7 @@
 .header4 {
   color: var(--black-50, rgba(44, 40, 38, 0.5));
   /* p */
-  font-size: 28px;
+  font-size: 16px;
   font-family: Poppins;
   font-weight: 700;
   /* margin-left: 25rem; */
@@ -40,9 +40,13 @@
   transform: scale(1.1);
 }
 
+
 @media screen and (min-width:600px) and (max-width: 900px){
   .icon{
     margin: 0px 3rem;
+  }
+  .header4{
+    font-size: 20px;
   }
 }
 
@@ -54,5 +58,8 @@
 
   .icon{
     margin: 0px 2rem;
+  }
+  .header4{
+    font-size: 28px;
   }
 }

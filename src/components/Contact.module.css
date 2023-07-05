@@ -75,4 +75,15 @@ input {
   color: #8f9193;
 }
 
+@media screen and (max-width:800px) and (min-width: 600px) {
+    .msg{
+        width: 400px;
+    }
+}
+@media screen and (max-width: 600px){
+    .msg{
+        width: 300px;
+    }
+}
+
 
