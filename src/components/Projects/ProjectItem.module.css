@@ -71,3 +71,14 @@
 .primary:hover {
   background: #ffdc30;
 }
+
+
+@keyframes slideInLeft {
+  from{
+    transform: translateX(-300px);
+  }
+  to{
+    transform: translateX(0);
+
+  }
+}

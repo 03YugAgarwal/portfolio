@@ -81,8 +81,8 @@ input {
     }
 }
 @media screen and (max-width: 600px){
-    .msg{
-        width: 300px;
+    .msg,input{
+        width: 280px;
     }
 }
 

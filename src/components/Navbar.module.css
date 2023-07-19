@@ -20,6 +20,12 @@
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
 
+  transition: transform 0.3s ease 0s;
+
+}
+
+.title:hover{
+    transform: scale(1.02);
 }
 
 .links a {
@@ -30,9 +36,17 @@
     font-family: 'Poppins';
     font-weight: 700;
     margin: 1rem 2rem 1rem 0rem;
+    transition: color 0.1s ease-in-out 0s;
 }
+
+.links a:hover{
+    color: #ff6f3c;
+}
+
 .links{
     margin-left: auto
+}
+.links:hover{
 }
 
 .span{
@@ -56,5 +70,35 @@
 
 .IconItem:hover{
     cursor: pointer;
+}
+
+.hamburger{
+    width: 1.5rem;
+    height: 1.5rem;
+    display: flex;
+    justify-content: space-around;
+    flex-flow: column nowrap;
+    z-index: 10;
+    position: absolute;
+    left: 1.5rem;
+}
+
+.burger{
+    display: none;
+    width: 1.5rem;
+    height: 0.2rem;
+    border-radius: 10px;
+    background-color: black;
+    transform-origin: 1px;
+    transition: all 0.3s linear;
+}
+
+@media screen and (max-width: 750px) {
+    .burger{
+        display: inline;
+    }
+    .links, .icons, .span{
+        display: none;
+    }
 }
 

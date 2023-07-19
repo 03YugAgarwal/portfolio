@@ -69,5 +69,16 @@
   .IconItem:hover{
       cursor: pointer;
   }
+
+  @media screen and (max-width: 800px) {
+    .title{
+       margin: 0.5rem 1rem;
+       font-size: 0.75rem;
+    }
+    .links{
+        font-size: 0.75rem;
+
+    }
+  }
   
   

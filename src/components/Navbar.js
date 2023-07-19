@@ -12,6 +12,11 @@ import styles from "./Navbar.module.css";
 const Navbar = () => {
   return (
     <div className={styles.container}>
+      <div className={styles.hamburger}>
+        <div className={styles.burger}></div>
+        <div className={styles.burger}></div>
+        <div className={styles.burger}></div>
+      </div>
       <h1 className={styles.title}>YUG AGARWAL</h1>
       <div className={styles.links}>
         <a href="/">About</a>
