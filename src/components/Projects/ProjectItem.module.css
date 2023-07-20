@@ -66,10 +66,14 @@
   margin-right: 24px;
 
   /* border: none; */
+  transition: all 0.3s ease-in 0s;
 }
 
 .primary:hover {
-  background: #ffdc30;
+  background: #ffdc3030;
+  transform: translateY(-4px);
+  box-shadow: 2px 2px black;
+  cursor: pointer;
 }
 
 

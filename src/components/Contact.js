@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import styles from "./Contact.module.css";
 import { db } from "../Firebase";
 import { collection, addDoc } from "firebase/firestore";
@@ -9,6 +9,21 @@ const Contact = () => {
     subject: "",
     message: "",
   });
+
+  useEffect(() => {
+    if (
+      details.name !== "" &&
+      details.email !== "" &&
+      details.message !== "" &&
+      details.subject !== ""
+    ) {
+      setEnable(true);
+    } else {
+      setEnable(false);
+    }
+  }, [details]);
+
+  const [enable, setEnable] = useState(false);
 
   const [postCheck, setPostCheck] = useState(false);
 
@@ -36,9 +51,11 @@ const Contact = () => {
     if (postCheck) {
       return;
     }
-    const detailCollection = collection(db, "message");
+    const detailCollection = collection(db, "contact");
     setPostCheck(true);
-    await addDoc(detailCollection, details);
+    const date = new Date();
+    const newDetails = { ...details, date };
+    await addDoc(detailCollection, newDetails);
 
     setDetails({
       name: "",
@@ -96,11 +113,17 @@ const Contact = () => {
           type="text"
           onChange={handleMsgChange}
           value={details.message}
+          required
           className={`${!postCheck ? styles.msg : styles.msgActive}`}
           readOnly={postCheck}
         />
 
-        <button onClick={handleClick} className={styles.btn}>
+        <button
+          disabled={!enable}
+          onClick={handleClick}
+          className={`${styles.btn} ${enable ? styles.active : ""}`}
+          type="submit"
+        >
           Send
         </button>
       </form>
